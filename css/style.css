@@ -1,10 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: "Lato", sans-serif;
 }
+
+.header {
+    padding: 15px 0;
+}
+
 .navigation {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .navigation-link {
@@ -36,9 +46,11 @@ body {
     cursor: pointer;
 }
 
-.button-icon, .button-price {
+.button-icon,
+.button-price {
     margin-right: 10px;
 }
+
 
 .slide {
     padding-top: 90px;
@@ -85,23 +97,53 @@ body {
     transform: translateY(-50%);
 }
 
-.slider-button{
+.slider-button {
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .card {
-min-height: 370px;
+    min-height: 370px;
+    border-radius: 10px;
+    padding-top: 60px;
+    padding-left: 46px;
+    padding-right: 46px;
+    padding-bottom: 80px;
 }
 
 .card-1 {
     background: #E3E2E3 url('../img/card-img-1.jpg') no-repeat top right;
+    background-size: cover;   
 }
 
-.card-title{
-    
+.card-2 {
+    background: #E3E2E3 url('../img/card-img-2.jpg') no-repeat top right;
+    background-size: cover;   
 }
 
-.card-text{
+.card-3 {
+    background: #CCD5E6 url('../img/card-img-3.png') no-repeat top right 10%;
+    background-size: contain;   
+}
 
+.card-title {
+    color: #262D33;
+    font-size: 25px;
+    line-height: 30px;    
+    font-family: "Roboto Slab", sans-serif;
+    max-width: 222px;
+    margin: 0;
+}
+
+.card-text {
+    min-width: 176px;
+    color: #4B5157;
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 222px;
+}
+
+.text-light {
+    color: white;
 }
